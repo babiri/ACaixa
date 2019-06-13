@@ -1,0 +1,18 @@
+<%= simple_form_for @regist do |f| %>
+
+  <%= f.input :caixa, as: :select, collection: Regist.caixas.keys.to_a %>
+  <%= f.input :five %>
+  <%= f.input :ten %>
+  <%= f.input :twenty %>
+  <%= f.input :fifty %>
+  <%= f.input :hund %>
+  <%= f.input :two_hund %>
+  <%= f.input :five_hund %>
+  <%= f.input :coin %>
+  <%= f.input :payment %>
+  <%= f.input :caixa_value %>
+
+
+  <%= f.button :submit, class: 'btn btn-primary btn-lg btn-block mt-4' %>
+<% end %>
+

@@ -1,0 +1,21 @@
+<h1>Registos</h1>
+<%= @regists.each do |regist| %>
+  <h3> <%= regist.created_at %> </h3>
+    <h4> <%= regist.caixa %> </h4>
+      <ul>
+        <%= regist.five %>
+        <%= regist.ten %>
+        <%= regist.twenty %>
+        <%= regist.fifty %>
+        <%= regist.hund %>
+        <%= regist.two_hund %>
+        <%= regist.five_hund %>
+        <%= regist.coin %>
+        <%= regist.reforco %>
+        <%= regist.payment %>
+        <%= regist.caixa_value %>
+      </ul>
+
+  <% end %>
+
+<%= link_to 'Novo Registo', new_regist_path%>
