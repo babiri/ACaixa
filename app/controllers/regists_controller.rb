@@ -12,9 +12,10 @@ class RegistsController < ApplicationController
   end
 
   def create
-    @regist = Regist.create(regist_params)
+    @regist = Regist.new(regist_params)
+    @regist.user = current_user
     if @regist.save
-      redirect_to @regists
+      redirect_to regists_path
     else
       render :new
     end

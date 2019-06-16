@@ -11,8 +11,9 @@ class Regist < ApplicationRecord
   validates :hund, numericality: { only_integer: true, allow_nil: true }
   validates :two_hund, numericality: { only_integer: true, allow_nil: true }
   validates :five_hund, numericality: { only_integer: true, allow_nil: true }
-  validates :coin, numericality: { only_integer: true, allow_nil: true }
+  validates :coin, numericality: { allow_nil: true }
   validates :reforco, numericality: { allow_nil: true }
   validates :payment, numericality: { allow_nil: true }
-  validates :caixa_value, numericality: { only_integer: true, allow_nil: true }, presence: true
+  validates :caixa_value, numericality: { only_integer: true }, presence: true
+  validates :user, presence: true
 end
