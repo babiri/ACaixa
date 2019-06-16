@@ -2,16 +2,16 @@
   <h3> <%= regist.created_at.strftime('%d - %m - %Y') %></h3>
   <h2> <%= regist.caixa %> </h2>
   <ul>
-    <%= regist.five %>
-    <%= regist.ten %>
-    <%= regist.twenty %>
-    <%= regist.fifty %>
-    <%= regist.hund %>
-    <%= regist.two_hund %>
-    <%= regist.five_hund %>
-    <%= regist.coin %>
-    <%= regist.reforco %>
-    <%= regist.payment %>
-    <%= regist.caixa_value %>
+    <li>5€: <%= regist.five %></li>
+    <li>10€: <%= regist.ten %></li>
+    <li>20€: <%= regist.twenty %></li>
+    <li>50€: <%= regist.fifty %></li>
+    <li>100€: <%= regist.hund %></li>
+    <li>200€: <%= regist.two_hund %></li>
+    <li>500€: <%= regist.five_hund %></li>
+    <li>Moedas: <%= regist.coin %> €</li>
+    <li>Reforço: <%= regist.reforco %>€</li>
+    <li>Pagamentos: <%= regist.payment %>€</li>
+    <li>Valor da caixa: <%= regist.caixa_value %>€</li>
   </ul>
 </div>
