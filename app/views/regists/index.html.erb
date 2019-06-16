@@ -1,0 +1,7 @@
+<h1>Registos</h1>
+<% @regists.each do |regist| %>
+  <%= link_to regist_path(regist), class: 'd-block my-3' do %>
+    <%= render 'regist_card', regist: regist %>
+  <% end %>
+<% end %>
+<%= link_to 'Novo Registo', new_regist_path, class: 'btn btn-primary btn-lg btn-block mt-4'%>

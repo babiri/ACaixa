@@ -1,0 +1,19 @@
+<%= simple_form_for @regist do |f| %>
+  <div class="form-inputs">
+    <%= f.input :caixa, as: :select, collection: Regist.caixas.keys.to_a %>
+    <%= f.input :five, label: '5€' %>
+    <%= f.input :ten, label: '10€' %>
+    <%= f.input :twenty, label: '20€' %>
+    <%= f.input :fifty, label: '50€' %>
+    <%= f.input :hund, label: '100€' %>
+    <%= f.input :two_hund, label: '200€' %>
+    <%= f.input :five_hund, label: '500€' %>
+    <%= f.input :coin, label: 'Valor total de moedas' %>
+    <%= f.input :reforco, label: 'Reforço' %>
+    <%= f.input :payment, label: 'Pagamento' %>
+    <%= f.input :caixa_value, label: 'Valor da Caixa' %>
+  </div>
+  <div class="form-actions">
+    <%= f.submit class: 'btn btn-primary btn-lg btn-block mt-4' %>
+  </div>
+<% end %>
